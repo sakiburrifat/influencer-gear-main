@@ -1,3 +1,61 @@
-h1{
-    color: red;
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* common style */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
 }
+
+
+
+
+
+/*................... 
+first section 
+............*/
+
+
+.half-width{
+    width: 50%;
+}
+.half-width img{
+    padding-left: 30%;
+    width: 50%;
+}
+.flex{
+    display: flex; 
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    
+
+}
+.blog{
+    padding-top: 50px;
+}
+.button{
+    margin-top: 30px;
+}
+
+.link-button{
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+.icon {
+    margin-left: 25px;
+}
+
+
+/*................... 
+second section 
+............*/
+
+
