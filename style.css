@@ -1,43 +1,51 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
 
 /* common style */
 
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #FFFFFF;
+    margin: 0px;
 }
-
-
-
-
-
-/*................... 
-first section 
-............*/
-
-
-.half-width{
-    width: 50%;
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.half-width img{
-    padding-left: 30%;
-    width: 50%;
+.container{
+    background-color: #FFFFFF;
+    width: 1200PX;
+    margin-top: 20px;
 }
-.flex{
-    display: flex; 
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 100px;
-    padding-top: 100px;
-    
+/*.................... 
+first section
+....................*/
 
+
+#left-text{
+    font-size: 25px;
 }
 .blog{
-    padding-top: 50px;
+    width: 50%;
+}
+.blog img{
+    padding-left: 30%;
+    width: 50%;
+    transition: 5s;
+}
+.blog img:hover{
+    transform: rotate(360deg);
+}
+#focus-line{
+font-size: 52px;
 }
 .button{
     margin-top: 30px;
+}
+.eye-catching-font{
+    display: flex;
 }
 
 .link-button{
@@ -48,14 +56,145 @@ first section
     font-weight: 700;
     padding: 10px 25px;
     border-radius: 50px;
+    height: 44px;
+    width: 196px;
+    margin-top: 300px;
 }
 .icon {
-    margin-left: 25px;
+    margin-left: 5px;
 }
+
+
+
 
 
 /*................... 
 second section 
 ............*/
 
+
+/* product style */
+
+
+
+.poduct-titel{
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.products .product-banner img{
+    height:250px;
+    width: 300px;
+}
+.product{
+    border: 5px solid rgba(235, 229, 229, 0.767);
+    box-shadow: 5px  5px rgba(241, 233, 233, 0.753);
+    margin: 25px;
+    padding: 20px;
+
+}
+.fa-star {
+    font-size: 12px;
+}
+.filled{
+    color: #FFC014;
+}
+.empty{
+    color: #AEAEAE;
+}
+.arrow{
+    color: #E02C6D;
+    text-align: right;
+}
+
+/*...........
+last part...... */
+.review-titel{
+    font-family: 'Neonderthaw', cursive;
+    font-size: 28px;
+    font-weight: 700px;
+    text-align: center;
+
+}
+
+.reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.half{
+    width: 50%;
+    padding-left: 2%;
+    padding-right: 2%;   
+}
+.half img{
+    width: 100%;
+}
+
+
+/* footer */
+
+
+
+
+footer{ margin-top: 100px;
+    background-color: #0a0826;  
+    
+}
+
+.copyright{
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+
+/* media query */
+
+/* mobile devices */
+
+
+@media only screen and (max-width: 688px){
+    .container{
+        width: 100%;
+    }
+    
+   
+   .eye-catching-font, .products, .reviews{
+    grid-template-columns: repeat(1, 1fr);
+    
+    }
+
+ 
+
+}
+
+
+/* tablet divice */
+
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .eye-catching-font, .products .reviews{
+        
+        grid-template-columns:repeat(2, 1fr);
+
+    }
+}
 
